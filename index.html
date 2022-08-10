@@ -1,1 +1,128 @@
-<h1>Hello</h1>
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Ламокран Экономический</title>  
+<meta charset="UTF-8">
+<script>
+var LodogiaRural= 5805708;
+var LodogiaUrban= 732721;
+var ShushiaRural = 5891928;
+var ShushiaUrban = 889712;
+var EsharRural = 6097671;
+var EsharUrban = 857494;
+var CeltaniaRural = 138322;
+var CeltaniaUrban = 612718;
+var TsunzhouRural = 4057502;
+var TsunzhouUrban = 711859;
+var SuidalRural = 3805078;
+var SuidalUrban = 546118;
+var DuliGouRural = 1711489;
+var DuliGouUrban = 361809;
+var IgtanGouRural = 3657571;
+var IgtanGouUrban = 552242;
+var FestehusRural = 1013743;
+var FestehusUrban = 80224;
+var BarvariaRural = 2025180;
+var BarvariaUrban = 544227;
+var EdildorRural = 1276773;
+var EdildorUrban = 267224;
+var KehiaRural = 1957604;
+var KehiaUrban = 370042;
+var BrabermainRural = 1614084;
+var BrabermainUrban = 530551;
+var VelmisiaRural = 2524374;
+var VelmisiaUrban = 423806;
+var BelorabiaRural = 875127;
+var BelorabiaUrban = 79376;
+var YamotoRural = 1251822;
+var YamotoUrban = 212044;
+var FaenRural = 1289734;
+var FaenUrban = 221837;
+var GobaniaRural = 1343368;
+var GobaniaUrban = 139503;
+var ScorpioRural = 939358;
+var ScorpioUrban = 186095;
+var KanakiaRural = 1190352;
+var KanakiaUrban = 303003;
+var SyranturRural = 299362;
+var SyranturUrban = 39202;
+var SardaryRural = 732337;
+var SardaryUrban = 137213;
+var NurkeniaRural = 119684;
+var NurkeniaUrban = 60018;
+var TurchinyRural = 663766;
+var TurchinyUrban = 200569;
+var ScorobeyRural = 177419;
+var ScorobeyUrban = 40967;
+var ArraneyRural = 343148;
+var ArraneyUrban = 48783;
+var ThreeCityUnionRural = 287123;
+var ThreeCityUnionUrban = 177659;
+var DoszhanRural = 130980;
+var DoszhanUrban = 40780;
+var KudeRural = 12202;
+var KudeUrban = 13581;
+var SamatRural = 91252;
+var SamatUrban = 28046;
+var ParahiRural = 77608;
+var ParahiUrban = 20064;
+
+
+window.onload = function () {
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	title:{
+		text: "Ламоран население",
+		horizontalAlign: "left"
+	},
+	data: [{
+		type: "pie",
+		startAngle: 60,
+		//innerRadius: 60,
+		indexLabelFontSize: 17,
+		indexLabel: "{label} - #percent%",
+		toolTipContent: "<b>{label}:</b> {y} (#percent%)",
+		dataPoints: [
+			{ y: EsharRural + EsharUrban, label: "Ешар" },
+			{ y: ShushiaRural + ShushiaUrban, label: "Шушия" },
+			{ y: LodogiaRural + LodogiaUrban, label: "Лодогия" },
+			{ y: TsunzhouRural + TsunzhouUrban, label: "Цуньжоу"},
+			{ y: SuidalRural + SuidalUrban, label: "Суидал"},
+            { y: IgtanGouRural + IgtanGouUrban, label: "Игтянь Гоу"},
+            { y: VelmisiaRural + VelmisiaUrban, label: "Вельмиссия"},
+            { y: BarvariaRural + BarvariaUrban, label: "Барвария"},
+            { y: KehiaRural + KehiaUrban, label: "Кехия"},
+            { y: BrabermainRural + BrabermainUrban, label: "Брабермейн"},
+            { y: DuliGouRural + DuliGouUrban, label: "Дули Гоу"},
+            { y: EdildorRural + EdildorUrban, label: "Эдильдор"},
+            { y: FaenRural + FaenUrban, label: "Фаен"},
+            { y: KanakiaRural + KanakiaUrban, label: "Канакия"},
+            { y: GobaniaRural + GobaniaUrban, label: "Гобания"},
+            { y: YamotoRural + YamotoUrban, label: "Ямото"},
+            { y: ScorpioRural + ScorpioUrban, label: "Скорпионы"},
+            { y: FestehusRural + FestehusUrban, label: "Фёстехус"},
+            { y: BelorabiaRural + BelorabiaUrban, label: "Белорабия"},
+            { y: TurchinyRural + TurchinyUrban, label: "Турчиния"},
+            { y: SardaryRural + SardaryUrban, label: "Сардары"},
+			{ y: CeltaniaRural + CeltaniaUrban, label: "Кельтания"},
+            { y: SyranturRural + SyranturUrban, label: "Сырантур"},
+            { y: ScorobeyRural + ScorobeyUrban, label: "Скоробеи"},
+            { y: ArraneyRural + ArraneyUrban, label: "Арраней"},
+            { y: ThreeCityUnionRural + ThreeCityUnionUrban, label: "Союз трех городов"},
+            { y: DoszhanRural + DoszhanUrban, label: "Досжан"},
+            { y: NurkeniaRural + NurkeniaUrban, label: "Нуркения"},
+            { y: KudeRural + KudeUrban, label: "Кудэ"},
+            { y: SamatRural + SamatUrban, label: "Самат"},
+            { y: ParahiRural + ParahiUrban, label: "Парахи"},  
+		]
+	}]
+});
+chart.render();
+}
+</script>
+</head>
+<body>
+<div id="chartContainer" style="height: 370px; max-width: 920px; margin: 0px auto;"></div>
+<script src="canvasjs.min.js"></script>
+</body>
+</html>

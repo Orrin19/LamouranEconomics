@@ -1,1 +1,1 @@
-# martyjayson.github.io
+# Simple Lamouran Economics
