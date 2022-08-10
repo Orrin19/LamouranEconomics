@@ -61,10 +61,18 @@ chart.render();
 }
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
+function showHoatria() {
+  document.getElementById("hoatria").classList.toggle("show");
 }
-
+function showWlamoraun() {
+    document.getElementById("wlamoraun").classList.toggle("show");
+}
+function showElamoraun() {
+    document.getElementById("elamoraun").classList.toggle("show");
+}
+function myDropdown() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
@@ -92,17 +100,47 @@ window.onclick = function(event) {
                 <li><a href="index.html" class="nav-link px-2 text-secondary dropbtn">Домой</a></li>
                 <li>
                 <div class="dropdown">
-                    <button onclick="myFunction()" class="dropbtn">Страны</button>
-                    <div id="myDropdown" class="dropdown-content">
-                        <a href="lodogia.html">Лодогия</a>
-                        <a href="shushia.html">Шушия</a>
-                        <a href="celtania.html">Кельтания</a>
-                        <a href="eshar.html">Ешар</a>
-                        <a href="tsunzhou.html">Цуньжоу</a>
-                        <a href="eshar.html">Суидал</a>
+                    <button onclick="showHoatria()" class="dropbtn">Хоатрия</button>
+                    <div id="hoatria" class="dropdown-content">
+                        <a href="festehus.html">Фёстехус</a>
+                        <a href="barvaria.html">Барвария</a>
+                        <a href="brabermain.html">Брабермейн</a>
                     </div>
                 </div>
                 </li>
+                <li>
+                    <div class="dropdown">
+                        <button onclick="showWlamoraun()" class="dropbtn">Западный Ламоран</button>
+                        <div id="wlamoraun" class="dropdown-content">
+                            <a href="duliGou.html">Дули Гоу</a>
+                            <a href="igtanGou.html">Игтянь Гоу</a>
+                            <a href="tsunzhou.html">Цуньжоу</a>
+                            <a href="eshar.html">Суидал</a>
+                        </div>
+                    </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button onclick="showElamoraun()" class="dropbtn">Восточный Ламоран</button>
+                            <div id="elamoraun" class="dropdown-content">
+                                <a href="lodogia.html">Лодогия</a>
+                                <a href="velmisia.html">Вельмиссия</a>
+                                <a href="belorabia.html">Белорабия</a>
+                            </div>
+                        </div>
+                        </li>
+                <li>
+                    <div class="dropdown">
+                        <button onclick="myDropdown()" class="dropbtn">Южный Ламоран</button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="shushia.html">Шушия</a>
+                            <a href="celtania.html">Кельтания</a>
+                            <a href="eshar.html">Ешар</a>
+                            <a href="edildor.html">Эдильдор</a>
+                            <a href="kehia.html">Кехия</a>
+                        </div>
+                    </div>
+                    </li>
             </ul>
           </div>
         </div>
