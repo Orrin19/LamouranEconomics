@@ -1,1 +1,1 @@
-# Simple Lamouran Economics
+# Simple Lamoraun Economics
