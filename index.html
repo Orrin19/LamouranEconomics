@@ -1,7 +1,8 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Ламокран Экономический</title>  
+<title>Ламокран Экономический</title> 
+<link rel = "icon" href = "./logo.png" type = "image/x-icon"> 
 <meta charset="UTF-8">
 <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
@@ -73,6 +74,13 @@ function showElamoraun() {
 function myDropdown() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
+
+function showRabi() {
+    document.getElementById("rabi").classList.toggle("show");
+}
+function showTigran() {
+    document.getElementById("tigran").classList.toggle("show");
+}
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
@@ -93,7 +101,7 @@ window.onclick = function(event) {
         <div class="container">
           <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
             <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-              <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+              <img src="logo.png">
             </a>
     
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
@@ -102,9 +110,12 @@ window.onclick = function(event) {
                 <div class="dropdown">
                     <button onclick="showHoatria()" class="dropbtn">Хоатрия</button>
                     <div id="hoatria" class="dropdown-content">
-                        <a href="festehus.html">Фёстехус</a>
-                        <a href="barvaria.html">Барвария</a>
-                        <a href="brabermain.html">Брабермейн</a>
+                        <a href="./countries/festehus.html">Фёстехус</a>
+                        <a href="./countries/barvaria.html">Барвария</a>
+                        <a href="./countries/brabermain.html">Брабермейн</a> 
+                        <a href="./countries/faen.html">Фаен</a> 
+                        <a href="./countries/gobania.html">Гобания</a> 
+                        <a href="./countries/syrantur.html">Сырантур</a> 
                     </div>
                 </div>
                 </li>
@@ -112,10 +123,13 @@ window.onclick = function(event) {
                     <div class="dropdown">
                         <button onclick="showWlamoraun()" class="dropbtn">Западный Ламоран</button>
                         <div id="wlamoraun" class="dropdown-content">
-                            <a href="duliGou.html">Дули Гоу</a>
-                            <a href="igtanGou.html">Игтянь Гоу</a>
-                            <a href="tsunzhou.html">Цуньжоу</a>
-                            <a href="eshar.html">Суидал</a>
+                            <a href="./countries/duliGou.html">Дули Гоу</a>
+                            <a href="./countries/igtanGou.html">Игтянь Гоу</a>
+                            <a href="./countries/tsunzhou.html">Цуньжоу</a>
+                            <a href="./countries/suidal.html">Суидал</a>
+                            <a href="./countries/yamoto.html">Ямотания</a>
+                            <a href="./countries/sardary.html">Сардары</a>
+                            <a href="./countries/celtania.html">Кельтания</a>
                         </div>
                     </div>
                     </li>
@@ -123,29 +137,60 @@ window.onclick = function(event) {
                         <div class="dropdown">
                             <button onclick="showElamoraun()" class="dropbtn">Восточный Ламоран</button>
                             <div id="elamoraun" class="dropdown-content">
-                                <a href="lodogia.html">Лодогия</a>
-                                <a href="velmisia.html">Вельмиссия</a>
-                                <a href="belorabia.html">Белорабия</a>
+                                <a href="./countries/lodogia.html">Лодогия</a>
+                                <a href="./countries/velmisia.html">Вельмиссия</a>
+                                <a href="./countries/belorabia.html">Белорабия</a>
+                                <a href="./countries/edildor.html">Эдильдор</a>
                             </div>
                         </div>
                         </li>
-                <li>
+                  <li>
                     <div class="dropdown">
                         <button onclick="myDropdown()" class="dropbtn">Южный Ламоран</button>
                         <div id="myDropdown" class="dropdown-content">
-                            <a href="shushia.html">Шушия</a>
-                            <a href="celtania.html">Кельтания</a>
-                            <a href="eshar.html">Ешар</a>
-                            <a href="edildor.html">Эдильдор</a>
-                            <a href="kehia.html">Кехия</a>
+                            <a href="./countries/kehia.html">Кехия</a>
+                            <a href="./countries/kanakia.html">Канакия</a>
+                            <a href="./countries/arraney.html">Арраней</a>
                         </div>
                     </div>
                     </li>
+                    <li>
+                    <div class="dropdown">
+                      <button onclick="showTigran()" class="dropbtn">Тиграния</button>
+                      <div id="tigran" class="dropdown-content">
+                          <a href="./countries/shushia.html">Шушия</a>
+                          <a href="./countries/eshar.html">Ешар</a>
+                          <a href="./countries/threeCityUnion.html">Союз трех городов</a>
+                          <a href="./countries/Kude.html">Кудэ</a>
+                      </div>
+                  </div>
+                  </li>
+                  <li>
+                    <div class="dropdown">
+                        <button onclick="showRabi()" class="dropbtn">Раби</button>
+                        <div id="rabi" class="dropdown-content">
+                            <a href="./countries/scorpio.html">Скорпионы</a>
+                            <a href="./countries/nurkenia.html">Нуркения</a>
+                            <a href="./countries/scorobey.html">Скоробеи</a>
+                            <a href="./countries/samat.html">Самат</a>
+                            <a href="./countries/Doszhan.html">Досжан</a>
+                        </div>
+                    </div>
+                  </li>
             </ul>
           </div>
         </div>
       </header>
 <div id="chartContainer" style="height: 370px; max-width: 920px; margin: 0px auto;"></div>
+
 <script src="canvasjs.min.js"></script>
+<footer class="py-3 my-4">
+  <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+    <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Домой</a></li>
+    <li class="nav-item"><a href="https://lamoraun.fandom.com/ru/wiki" class="nav-link px-2 text-muted">Вики</a></li>
+    <li class="nav-item"><a href="https://discordserver.info/664491015914258452/invite" class="nav-link px-2 text-muted">Дискорд</a></li>
+  </ul>
+	<p class="text-center text-muted">© 2022 РВПИ Ламоран</p>
+</footer>
 </body>
 </html>
