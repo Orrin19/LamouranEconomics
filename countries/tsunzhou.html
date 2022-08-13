@@ -260,8 +260,9 @@ window.onclick = function(event) {
 	mt.innerHTML = 10;
 	rt.innerHTML = 10;
 	var ptf = document.getElementById("ptf");
-	ctlFull.innerHTML = Math.floor(((poorTax + middleTax +richTax+Math.floor(production)/10000))*100)/100;
-	finalProfit.innerHTML = Math.floor(((poorTax + middleTax +richTax+Math.floor(production)/10000)*control)*100)/100;
+	var finalTax = (poorTax+middleTax+richTax)*1.1
+	ctlFull.innerHTML = finalTax+Math.floor(production)/10000;
+	finalProfit.innerHTML = Math.floor(((finalTax+Math.floor(production)/10000)*control)*100)/100;
 	var poorTaxFinal = poorTax, middleTaxFinal = middleTax, richTaxFinal=richTax;
 	function finalProf()
 	{
