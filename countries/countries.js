@@ -18,7 +18,24 @@ const Celtania = {
 }
 const Tsunzhou = {
     Rural: 4057502,
-    Urban: 711859
+    Urban: 711859,
+    // production
+    BladedWeapon: 18,
+    Polearms:21,
+    RangedWeapons:17,
+    ExpensiveClothes:0.5,
+    CheapClothes:9,
+    Jewelry:0.001,
+    Beer:6,
+    Wine:1,
+    WritingMaterials:9,
+    Pottery:18,
+    ShipTackle:13,
+    FinishedWood:1,
+    Steel:12,
+    HeavyArmor:2,
+    MediumArmor:24,
+    LightArmor:4
 }
 const Suidal = {
     Rural: 3805078,
@@ -68,7 +85,6 @@ const Faen = {
     Rural: 1289734,
     Urban: 221837
 }
-//-
 const Gobania = {
     Rural: 1343368,
     Urban: 139503
@@ -89,7 +105,6 @@ const Sardary = {
     Rural: 732337,
     Urban: 137213
 }
-//-
 const Nurkenia = {
     Rural: 119684,
     Urban: 60018

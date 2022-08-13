@@ -52,5 +52,5 @@ const Produced = {
     WrathOfSarfar:1000000,
     Bulkvasen:5000,
     TsunzhouAlcohol:20000,
-    VochiCider
+    VochiCider:5000
 }
