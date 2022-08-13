@@ -182,6 +182,20 @@ window.onclick = function(event) {
 	</tr>
 	<tr>
 		<td>
+			Контроль (автономия)
+		</td>
+		<td>
+			<p id="control" style="display: inline;"></p>
+		</td>
+		<td>
+			При 100% контроле
+		</td>
+		<td>
+			<p id="controlFull" style="display: inline;"></p>K$
+		</td>
+	</tr>
+	<tr>
+		<td>
 			Итоговый доход
 		</td>
 		<td>
@@ -193,6 +207,7 @@ window.onclick = function(event) {
 <script>
 	var rural = Tsunzhou.Rural;
 	var urban = Tsunzhou.Urban;
+	var control = Tsunzhou.Control;
 	var production = Tsunzhou.BladedWeapon * Produced.BladedWeapon
 	+ Tsunzhou.Polearms * Produced.Polearms
 	+ Tsunzhou.RangedWeapons * Produced.RangedWeapons
@@ -223,11 +238,12 @@ window.onclick = function(event) {
 	document.getElementById("pep").innerHTML = Math.floor((all)/1000);
 	document.getElementById("gos").innerHTML = gos;
 	document.getElementById("urb").innerHTML = urb;
+	document.getElementById("control").innerHTML = control;
 	document.getElementById("production").innerHTML = production/10000;
 	document.getElementById("urbpep").innerHTML = Math.floor(urban/10)/100;
 	document.getElementById("rurpep").innerHTML = Math.floor(rural/10)/100;
 	document.getElementById("male").innerHTML = Math.floor(all*0.52/10)/100;
-	document.getElementById("female").innerHTML = Math.floor(all*0.48/10)/100;;
+	document.getElementById("female").innerHTML = Math.floor(all*0.48/10)/100;
 	var p = document.getElementById("poor");
 	var pt = document.getElementById("poorTaxPercent");
 	var m = document.getElementById("middle");
@@ -236,6 +252,7 @@ window.onclick = function(event) {
 	var rt = document.getElementById("richTaxPercent");
 	var prod = document.getElementById("production");
 	var finalProfit = document.getElementById("profit");
+	var ctlFull = document.getElementById("controlFull");
 	p.innerHTML= poorTax*1.1;
 	m.innerHTML = middleTax*1.1;
 	r.innerHTML = richTax*1.1;
@@ -243,10 +260,15 @@ window.onclick = function(event) {
 	mt.innerHTML = 10;
 	rt.innerHTML = 10;
 	var ptf = document.getElementById("ptf");
+	ctlFull.innerHTML = Math.floor(((poorTax + middleTax +richTax+Math.floor(production)/10000))*100)/100;
+	finalProfit.innerHTML = Math.floor(((poorTax + middleTax +richTax+Math.floor(production)/10000)*control)*100)/100;
 	var poorTaxFinal = poorTax, middleTaxFinal = middleTax, richTaxFinal=richTax;
 	function finalProf()
 	{
-		finalProfit.innerHTML = Math.floor((poorTaxFinal+middleTaxFinal+richTax+richTaxFinal+Math.floor(production)/10000)*100)/100;
+		var final = poorTaxFinal+middleTaxFinal+richTaxFinal+Math.floor(production)/10000;
+		ctlFull.innerHTML =  Math.floor((final)*100)/100;
+		final*=control;
+		finalProfit.innerHTML = Math.floor((final)*100)/100;
 	}
 	function poorTaxFix() 
 	{

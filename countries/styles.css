@@ -8,6 +8,10 @@ table{
   color: gold;
   font-size: large;
 }
+#controlFull {
+  color: orange;
+  font-size: large;
+}
 .center {
   margin-left: auto;
   margin-right: auto;

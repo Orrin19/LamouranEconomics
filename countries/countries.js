@@ -19,6 +19,7 @@ const Celtania = {
 const Tsunzhou = {
     Rural: 4057502,
     Urban: 711859,
+    Control: 0.26,
     // production
     BladedWeapon: 18,
     Polearms:21,
