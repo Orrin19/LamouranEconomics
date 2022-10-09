@@ -1,47 +1,143 @@
-.container{
-    margin: 1%;
+:root {
+  --theme-accent-background: #212529;
+  --theme-accent-font-color: #fff;
+  --theme-block-background: #f1f1f1;
+  --theme-block-background--hover: #ddd;
+  --theme-body-font-color: #000;
+  --theme-muted-font-color: #6c757d;
+  --theme-muted-font-color--hover: #aaafb5;
 }
+
+body {
+  min-height: 100vh !important;
+}
+
+/**************/
+/*** HEADER ***/
+/**************/
+.header {
+  align-items: center;
+  background-color: var(--theme-accent-background);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  padding: 1.5rem;
+}
+
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+
 /* Dropdown Button */
-.dropbtn {
-    background-color: #3498DB;
-    color: white !important;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  /* Dropdown button on hover & focus */
-  .dropbtn:hover, .dropbtn:focus {
-    background-color: #2980B9;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd}
-  
-  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-  .show {display:block;}
+.dropdown__button {
+  background-color: inherit;
+  color: var(--theme-accent-font-color);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown__button::after {
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid currentColor;
+  content: '';
+  display: inline-block;
+  margin: 0 0 -3px 5px;
+  height: 10px;
+  width: 10px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown__content {
+  background-color: var(--theme-block-background);
+  border-radius: 2px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  display: none;
+  min-width: 160px;
+  position: absolute;
+  z-index: 1;
+}
+
+/* Если у тебя файерфокс, пососи 
+.dropdown:has(*:hover) .dropdown__content {
+  display: block;
+}*/
+
+.dropdown--selected__button::after {
+  border-bottom: 5px solid currentColor;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid transparent;
+  margin: 0 0 3px 5px;
+}
+
+/* Links inside the dropdown */
+.dropdown__content a {
+  color: var(--theme-body-font-color);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown__content a:hover {
+  background-color: var(--theme-block-background--hover);
+}
+
+/**************/
+/*** FOOTER ***/
+/**************/
+.footer {
+  align-items: center;
+  background-color: var(--theme-accent-background);
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1.5rem;
+  position: absolute;
+  user-select: none;
+  width: 100%;
+}
+
+.footer__nav {
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 15px;
+  padding: 0;
+}
+
+.footer__nav li:not(:last-child)::after {
+  background-color: currentColor;
+  border-radius: 3px;
+  content: '';
+  display: inline-block;
+  height: 6px;
+  width: 6px;
+}
+
+.footer__nav li::marker {
+  color: transparent;
+}
+
+.footer__nav a,
+.footer__text {
+  color: var(--theme-muted-font-color);
+  text-decoration: none;
+}
+
+.footer__nav a:hover {
+  color: var(--theme-muted-font-color--hover);
+}

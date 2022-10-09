@@ -1,196 +1,127 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-<head>
-<title>Ламокран Экономический</title> 
-<link rel = "icon" href = "./logo.png" type = "image/x-icon"> 
-<meta charset="UTF-8">
-<!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-<link rel="stylesheet" href="styles.css">
-<script type="text/javascript" src="countries.js"></script>
-<script>
-window.onload = function () {
-var chart = new CanvasJS.Chart("chartContainer", {
-	animationEnabled: true,
-	title:{
-		text: "Ламоран население",
-		horizontalAlign: "left"
-	},
-	data: [{
-		type: "pie",
-		startAngle: 60,
-		//innerRadius: 60,
-		indexLabelFontSize: 17,
-		indexLabel: "{label} - #percent%",
-		toolTipContent: "<b>{label}:</b> {y} (#percent%)",
-		dataPoints: [
-			{ y: Eshar.Rural + Eshar.Urban, label: "Ешар" },
-			{ y: Shushia.Rural + Shushia.Urban, label: "Шушия" },
-			{ y: Lodogia.Rural +Lodogia.Urban, label: "Лодогия" },
-			{ y: Tsunzhou.Rural + Tsunzhou.Urban, label: "Цуньжоу"},
-			{ y: Suidal.Rural + Suidal.Urban, label: "Суидал"},
-            { y: IgtanGou.Rural + IgtanGou.Urban, label: "Игтянь Гоу"},
-            { y: Velmisia.Rural + Velmisia.Urban, label: "Вельмиссия"},
-            { y: Barvaria.Rural + Barvaria.Urban, label: "Барвария"},
-            { y: Kehia.Rural + Kehia.Urban, label: "Кехия"},
-            { y: Brabermain.Rural + Brabermain.Urban, label: "Брабермейн"},
-            { y: DuliGou.Rural + DuliGou.Urban, label: "Дули Гоу"},
-            { y: Edildor.Rural + Edildor.Urban, label: "Эдильдор"},
-            { y: Faen.Rural + Faen.Urban, label: "Фаен"},
-            { y: Kanakia.Rural + Kanakia.Urban, label: "Канакия"},
-            { y: Gobania.Rural + Gobania.Urban, label: "Гобания"},
-            { y: Yamoto.Rural + Yamoto.Urban, label: "Ямото"},
-            { y: Scorpio.Rural + Scorpio.Urban, label: "Скорпионы"},
-            { y: Festehus.Rural + Festehus.Urban, label: "Фёстехус"},
-            { y: Belorabia.Rural + Belorabia.Urban, label: "Белорабия"},
-            { y: Turchiny.Rural + Turchiny.Urban, label: "Турчиния"},
-            { y: Sardary.Rural + Sardary.Urban, label: "Сардары"},
-			{ y: Celtania.Rural + Celtania.Urban, label: "Кельтания"},
-            { y: Syrantur.Rural + Syrantur.Urban, label: "Сырантур"},
-            { y: Scorobey.Rural + Scorobey.Urban, label: "Скоробеи"},
-            { y: Arraney.Rural + Arraney.Urban, label: "Арраней"},
-            { y: ThreeCityUnion.Rural + ThreeCityUnion.Urban, label: "Союз трех городов"},
-            { y: Doszhan.Rural + Doszhan.Urban, label: "Досжан"},
-            { y: Nurkenia.Rural + Nurkenia.Urban, label: "Нуркения"},
-            { y: Kude.Rural + Kude.Urban, label: "Кудэ"},
-            { y: Samat.Rural + Samat.Urban, label: "Самат"},
-            { y: Parahi.Rural + Parahi.Urban, label: "Парахи"},  
-		]
-	}]
-});
-chart.render();
-}
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function showHoatria() {
-  document.getElementById("hoatria").classList.toggle("show");
-}
-function showWlamoraun() {
-    document.getElementById("wlamoraun").classList.toggle("show");
-}
-function showElamoraun() {
-    document.getElementById("elamoraun").classList.toggle("show");
-}
-function myDropdown() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-
-function showRabi() {
-    document.getElementById("rabi").classList.toggle("show");
-}
-function showTigran() {
-    document.getElementById("tigran").classList.toggle("show");
-}
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
-</head>
-<body>
-    <header class="p-3 text-bg-dark">
-        <div class="container">
-          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-              <img src="logo.png">
-            </a>
-    
-            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="index.html" class="nav-link px-2 text-secondary dropbtn">Домой</a></li>
-                <li>
-                <div class="dropdown">
-                    <button onclick="showHoatria()" class="dropbtn">Хоатрия</button>
-                    <div id="hoatria" class="dropdown-content">
-                        <a href="./countries/festehus.html">Фёстехус</a>
-                        <a href="./countries/barvaria.html">Барвария</a>
-                        <a href="./countries/brabermain.html">Брабермейн</a> 
-                        <a href="./countries/faen.html">Фаен</a> 
-                        <a href="./countries/gobania.html">Гобания</a> 
-                        <a href="./countries/syrantur.html">Сырантур</a> 
-                    </div>
-                </div>
-                </li>
-                <li>
-                    <div class="dropdown">
-                        <button onclick="showWlamoraun()" class="dropbtn">Западный Ламоран</button>
-                        <div id="wlamoraun" class="dropdown-content">
-                            <a href="./countries/duliGou.html">Дули Гоу</a>
-                            <a href="./countries/igtanGou.html">Игтянь Гоу</a>
-                            <a href="./countries/tsunzhou.html">Цуньжоу</a>
-                            <a href="./countries/suidal.html">Суидал</a>
-                            <a href="./countries/yamoto.html">Ямотания</a>
-                            <a href="./countries/sardary.html">Сардары</a>
-                            <a href="./countries/celtania.html">Кельтания</a>
-                        </div>
-                    </div>
-                    </li>
-                    <li>
-                        <div class="dropdown">
-                            <button onclick="showElamoraun()" class="dropbtn">Восточный Ламоран</button>
-                            <div id="elamoraun" class="dropdown-content">
-                                <a href="./countries/lodogia.html">Лодогия</a>
-                                <a href="./countries/velmisia.html">Вельмиссия</a>
-                                <a href="./countries/belorabia.html">Белорабия</a>
-                                <a href="./countries/edildor.html">Эдильдор</a>
-                            </div>
-                        </div>
-                        </li>
-                  <li>
-                    <div class="dropdown">
-                        <button onclick="myDropdown()" class="dropbtn">Южный Ламоран</button>
-                        <div id="myDropdown" class="dropdown-content">
-                            <a href="./countries/kehia.html">Кехия</a>
-                            <a href="./countries/kanakia.html">Канакия</a>
-                            <a href="./countries/arraney.html">Арраней</a>
-                        </div>
-                    </div>
-                    </li>
-                    <li>
-                    <div class="dropdown">
-                      <button onclick="showTigran()" class="dropbtn">Тиграния</button>
-                      <div id="tigran" class="dropdown-content">
-                          <a href="./countries/shushia.html">Шушия</a>
-                          <a href="./countries/eshar.html">Ешар</a>
-                          <a href="./countries/threeCityUnion.html">Союз трех городов</a>
-                          <a href="./countries/Kude.html">Кудэ</a>
-                      </div>
-                  </div>
-                  </li>
-                  <li>
-                    <div class="dropdown">
-                        <button onclick="showRabi()" class="dropbtn">Раби</button>
-                        <div id="rabi" class="dropdown-content">
-                            <a href="./countries/scorpio.html">Скорпионы</a>
-                            <a href="./countries/nurkenia.html">Нуркения</a>
-                            <a href="./countries/scorobey.html">Скоробеи</a>
-                            <a href="./countries/samat.html">Самат</a>
-                            <a href="./countries/Doszhan.html">Досжан</a>
-                        </div>
-                    </div>
-                  </li>
-            </ul>
+  <head>
+    <title>Экономика Ламорана</title>
+    <link rel="icon" href="./logo.png" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript" src="countries.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <a href="/">
+          <img src="logo.png" />
+        </a>
+      </div>
+      <ul class="header__nav">
+        <li>
+          <div class="dropdown">
+            <button class="dropdown__button">Хоатрия</button>
+            <div class="dropdown__content">
+              <a href="./countries/festehus.html">Фёстехус</a>
+              <a href="./countries/barvaria.html">Барвария</a>
+              <a href="./countries/brabermain.html">Брабермейн</a>
+              <a href="./countries/faen.html">Фаен</a>
+              <a href="./countries/gobania.html">Гобания</a>
+              <a href="./countries/syrantur.html">Сырантур</a>
+            </div>
           </div>
-        </div>
-      </header>
-<div id="chartContainer" style="height: 370px; max-width: 920px; margin: 0px auto;"></div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <button class="dropdown__button">Западный Ламоран</button>
+            <div class="dropdown__content">
+              <a href="./countries/duliGou.html">Дули Гоу</a>
+              <a href="./countries/igtanGou.html">Игтянь Гоу</a>
+              <a href="./countries/tsunzhou.html">Цуньжоу</a>
+              <a href="./countries/suidal.html">Суидал</a>
+              <a href="./countries/yamoto.html">Ямотания</a>
+              <a href="./countries/sardary.html">Сардары</a>
+              <a href="./countries/celtania.html">Кельтания</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <button class="dropdown__button">Восточный Ламоран</button>
+            <div class="dropdown__content">
+              <a href="./countries/lodogia.html">Лодогия</a>
+              <a href="./countries/velmisia.html">Вельмиссия</a>
+              <a href="./countries/belorabia.html">Белорабия</a>
+              <a href="./countries/edildor.html">Эдильдор</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <button class="dropdown__button">Южный Ламоран</button>
+            <div class="dropdown__content">
+              <a href="./countries/kehia.html">Кехия</a>
+              <a href="./countries/kanakia.html">Канакия</a>
+              <a href="./countries/arraney.html">Арраней</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <button class="dropdown__button">Тиграния</button>
+            <div class="dropdown__content">
+              <a href="./countries/shushia.html">Шушия</a>
+              <a href="./countries/eshar.html">Ешар</a>
+              <a href="./countries/threeCityUnion.html">Союз трех городов</a>
+              <a href="./countries/Kude.html">Кудэ</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <button class="dropdown__button">Раби</button>
+            <div class="dropdown__content">
+              <a href="./countries/scorpio.html">Скорпионы</a>
+              <a href="./countries/nurkenia.html">Нуркения</a>
+              <a href="./countries/scorobey.html">Скоробеи</a>
+              <a href="./countries/samat.html">Самат</a>
+              <a href="./countries/Doszhan.html">Досжан</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </header>
+    <script type="text/javascript" src="dropdown.js"></script>
 
-<script src="canvasjs.min.js"></script>
-<footer class="py-3 my-4">
-  <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-    <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Домой</a></li>
-    <li class="nav-item"><a href="https://lamoraun.fandom.com/ru/wiki" class="nav-link px-2 text-muted">Вики</a></li>
-    <li class="nav-item"><a href="https://discordserver.info/664491015914258452/invite" class="nav-link px-2 text-muted">Дискорд</a></li>
-  </ul>
-	<p class="text-center text-muted">© 2022 РВПИ Ламоран</p>
-</footer>
-</body>
+    <div class="main-container">
+      <div
+        id="chartContainer"
+        style="height: 370px; max-width: 920px; margin: 0px auto"
+      ></div>
+    </div>
+
+    <script src="canvasjs.min.js"></script>
+    <script type="text/javascript" src="diagram.js"></script>
+
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li>
+          <a href="index.html">Домой</a>
+        </li>
+        <li>
+          <a href="https://lamoraun.fandom.com/ru/wiki">Вики</a>
+        </li>
+        <li>
+          <a href="https://discordserver.info/664491015914258452/invite"
+            >Дискорд</a
+          >
+        </li>
+      </ul>
+      <p class="footer__text">© 2022 РВПИ Ламоран</p>
+    </footer>
+  </body>
 </html>
