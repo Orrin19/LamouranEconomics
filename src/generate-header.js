@@ -63,7 +63,7 @@ header.innerHTML = `<div class="header__logo">
       <a href="/countries/shushia.html">Шушия</a>
       <a href="/countries/eshar.html">Ешар</a>
       <a href="/countries/threeCityUnion.html">Союз трех городов</a>
-      <a href="/countries/kude.html">Кудэ</a>
+      <a href="/countries/Kude.html">Кудэ</a>
     </div>
   </div>
 </li>
@@ -75,7 +75,7 @@ header.innerHTML = `<div class="header__logo">
       <a href="/countries/nurkenia.html">Нуркения</a>
       <a href="/countries/scorobey.html">Скоробеи</a>
       <a href="/countries/samat.html">Самат</a>
-      <a href="/countries/doszhan.html">Досжан</a>
+      <a href="/countries/Doszhan.html">Досжан</a>
     </div>
   </div>
 </li>
