@@ -18,6 +18,7 @@ const Countries = {
   tsunzhou: {
     rural: 4057502,
     urban: 711859,
+    control: 0.26,
     production: {
       bladedWeapon: 18,
       polearms: 21,

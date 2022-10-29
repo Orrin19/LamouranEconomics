@@ -8,6 +8,7 @@
   --theme-muted-font-color--hover: #aaafb5;
 }
 
+html,
 body {
   min-height: 100vh !important;
 }
@@ -96,18 +97,20 @@ body {
 }
 
 /**************/
+/*** CONTENT **/
+/**************/
+
+/**************/
 /*** FOOTER ***/
 /**************/
 .footer {
   align-items: center;
   background-color: var(--theme-accent-background);
-  bottom: 0;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   padding: 1.5rem;
-  position: absolute;
   user-select: none;
   width: 100%;
 }
@@ -140,4 +143,31 @@ body {
 
 .footer__nav a:hover {
   color: var(--theme-muted-font-color--hover);
+}
+
+td {
+  border: 1px solid black;
+}
+
+.container {
+  margin: 1%;
+}
+
+table {
+  background-color: lightslategray;
+}
+
+#profit {
+  color: gold;
+  font-size: large;
+}
+
+#controlFull {
+  color: orange;
+  font-size: large;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
 }

@@ -1,127 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Экономика Ламорана</title>
-    <link rel="icon" href="./logo.png" type="image/x-icon" />
+    <link rel="icon" href="/src/logo.png" type="image/x-icon" />
     <meta charset="UTF-8" />
     <!-- CSS only -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <script type="text/javascript" src="countries.js"></script>
-  </head>
-  <body>
-    <header class="header">
-      <div class="header__logo">
-        <a href="/">
-          <img src="logo.png" />
-        </a>
-      </div>
-      <ul class="header__nav">
-        <li>
-          <div class="dropdown">
-            <button class="dropdown__button">Хоатрия</button>
-            <div class="dropdown__content">
-              <a href="./countries/festehus.html">Фёстехус</a>
-              <a href="./countries/barvaria.html">Барвария</a>
-              <a href="./countries/brabermain.html">Брабермейн</a>
-              <a href="./countries/faen.html">Фаен</a>
-              <a href="./countries/gobania.html">Гобания</a>
-              <a href="./countries/syrantur.html">Сырантур</a>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="dropdown">
-            <button class="dropdown__button">Западный Ламоран</button>
-            <div class="dropdown__content">
-              <a href="./countries/duliGou.html">Дули Гоу</a>
-              <a href="./countries/igtanGou.html">Игтянь Гоу</a>
-              <a href="./countries/tsunzhou.html">Цуньжоу</a>
-              <a href="./countries/suidal.html">Суидал</a>
-              <a href="./countries/yamoto.html">Ямотания</a>
-              <a href="./countries/sardary.html">Сардары</a>
-              <a href="./countries/celtania.html">Кельтания</a>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="dropdown">
-            <button class="dropdown__button">Восточный Ламоран</button>
-            <div class="dropdown__content">
-              <a href="./countries/lodogia.html">Лодогия</a>
-              <a href="./countries/velmisia.html">Вельмиссия</a>
-              <a href="./countries/belorabia.html">Белорабия</a>
-              <a href="./countries/edildor.html">Эдильдор</a>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="dropdown">
-            <button class="dropdown__button">Южный Ламоран</button>
-            <div class="dropdown__content">
-              <a href="./countries/kehia.html">Кехия</a>
-              <a href="./countries/kanakia.html">Канакия</a>
-              <a href="./countries/arraney.html">Арраней</a>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="dropdown">
-            <button class="dropdown__button">Тиграния</button>
-            <div class="dropdown__content">
-              <a href="./countries/shushia.html">Шушия</a>
-              <a href="./countries/eshar.html">Ешар</a>
-              <a href="./countries/threeCityUnion.html">Союз трех городов</a>
-              <a href="./countries/Kude.html">Кудэ</a>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="dropdown">
-            <button class="dropdown__button">Раби</button>
-            <div class="dropdown__content">
-              <a href="./countries/scorpio.html">Скорпионы</a>
-              <a href="./countries/nurkenia.html">Нуркения</a>
-              <a href="./countries/scorobey.html">Скоробеи</a>
-              <a href="./countries/samat.html">Самат</a>
-              <a href="./countries/Doszhan.html">Досжан</a>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </header>
-    <script type="text/javascript" src="dropdown.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <script type="text/javascript" src="src/countries.js"></script>
+</head>
+
+<body>
+    <script type="text/javascript" src="/src/generate-header.js"></script>
+    <script type="text/javascript" src="/src/dropdown.js"></script>
 
     <div class="main-container">
-      <div
-        id="chartContainer"
-        style="height: 370px; max-width: 920px; margin: 0px auto"
-      ></div>
+        <div id="chartContainer" style="height: 370px; max-width: 920px; margin: 0px auto"></div>
     </div>
 
-    <script src="canvasjs.min.js"></script>
-    <script type="text/javascript" src="diagram.js"></script>
+    <script src="/src/canvasjs.min.js"></script>
+    <script type="text/javascript" src="/src/diagram.js"></script>
 
-    <footer class="footer">
-      <ul class="footer__nav">
-        <li>
-          <a href="index.html">Домой</a>
-        </li>
-        <li>
-          <a href="https://lamoraun.fandom.com/ru/wiki">Вики</a>
-        </li>
-        <li>
-          <a href="https://discordserver.info/664491015914258452/invite"
-            >Дискорд</a
-          >
-        </li>
-      </ul>
-      <p class="footer__text">© 2022 РВПИ Ламоран</p>
-    </footer>
-  </body>
+    <script type="text/javascript" src="/src/generate-footer.js"></script>
+</body>
+
 </html>
