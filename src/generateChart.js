@@ -9,11 +9,20 @@ const chart = new CanvasJS.Chart('chartContainer', {
       toolTipContent: '<b>{label}:</b> {y} (#percent%)',
       dataPoints: Object.values(Countries)
         .map((country) => {
-          return {
+          const dataPoint = {
             y: country.rural + country.urban,
             color: country.color,
             label: country.name,
+            click: function () {
+              window.open(
+                `/countries/${Object.keys(Countries).find(
+                  (key) => Countries[key].name == this.label
+                )}.html`,
+                '_blank'
+              );
+            },
           };
+          return dataPoint;
         })
         .sort((a, b) => a.y - b.y),
     },
