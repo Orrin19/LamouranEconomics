@@ -249,32 +249,183 @@ p {
 .container__table td {
   border: 1px solid black;
 }
+.map-container img{
+  -webkit-filter: grayscale(80%);
+	filter: grayscale(80%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.map-container img:hover{
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
 #abercockta{
   position:absolute;
-  width: 8%;
-  left: 41.5em;
-  top: 15.8em;
-}
-#abercockta:hover{
-  filter: contrast(160%);
+  width: 8.1%;
+  left: 41.6em;
+  top: 16em;
 }
 #korskaya{
   position:absolute;
-  width: 13%;
-  left: 21.1em;
+  width: 13.5%;
+  left: 21.2em;
   top: 8.3em;
-}
-#korskaya:hover{
-  filter: contrast(160%);
 }
 #seaofghosts{
   position:absolute;
-  width: 13.5%;
-  left: 12.9em;
-  top: 7.7em;
+  width: 13.9%;
+  left: 13em;
+  top: 7.75em;
 }
-#seaofghosts:hover{
-  filter: contrast(160%);
+#clitor{
+  position:absolute;
+  width: 8.5%;
+  left: 24.55em;
+  top: 13.15em;
+}
+#huyerinis{
+  position:absolute;
+  width: 9.8%;
+  left: 22.2em;
+  top: 19em;
+}
+#yamoto{
+  position:absolute;
+  width: 11.5%;
+  left: 28.5em;
+  top: 22.1em;
+}
+#dzhudzhuh{
+  position:absolute;
+  width: 5%;
+  left: 14.81em;
+  top: 27.53em;
+}
+#antakovia{
+  position:absolute;
+  width: 14.25%;
+  left: 29.4em;
+  top: 17.1em;
+}
+#bamvut{
+  position:absolute;
+  width: 12.65%;
+  left: 47em;
+  top: 10.8em;
+}
+#bavat{
+  position:absolute;
+  width: 10.5%;
+  left: 49.1em;
+  top: 18.5em;
+}
+#buinomore{
+  position:absolute;
+  width: 11.5%;
+  left: 63em;
+  top: 13.8em;
+}
+#bushar{
+  position:absolute;
+  width: 10.5%;
+  left: 34.7em;
+  top: 25em;
+}
+#cheeseantur{
+  position:absolute;
+  width: 5.5%;
+  left: 45em;
+  top: 11.3em;
+}
+#dochehia{
+  position:absolute;
+  width: 9.2%;
+  left: 46.4em;
+  top: 20.6em;
+}
+#duchies{
+  position:absolute;
+  width: 8.3%;
+  left: 60.5em;
+  top: 22.5em;
+}
+#eshebamvut{
+  position:absolute;
+  width: 12.5%;
+  left: 50em;
+  top: 3em;
+}
+#gennadiygosha{
+  position:absolute;
+  width: 12.75%;
+  left: 40.9em;
+  top: 23.5em;
+}
+#highlands{
+  position:absolute;
+  width: 12.5%;
+  left: 39.2em;
+  top: 8em;
+}
+#lodog{
+  position:absolute;
+  width: 8%;
+  left: 59em;
+  top: 3.6em;
+}
+#lowlands{
+  position:absolute;
+  width: 13.7%;
+  left: 33em;
+  top: 4em;
+}
+#newsea{
+  position:absolute;
+  width: 10%;
+  left: 63.1em;
+  top: 19.1em;
+}
+#old{
+  position:absolute;
+  width: 7%;
+  left: 57.7em;
+  top: 14.7em;
+}
+#rabisands{
+  position:absolute;
+  width: 10%;
+  left: 67.5em;
+  top: 19em;
+}
+#zhungu{
+  position:absolute;
+  width: 14%;
+  left: 29.8em;
+  top: 10.5em;
+}
+#snofelt{
+  position:absolute;
+  width: 10.5%;
+  left: 43.8em;
+  top: 0.8em;
+}
+#tark{
+  position:absolute;
+  width: 9%;
+  left: 53em;
+  top: 21em;
+}
+#vaderd{
+  position:absolute;
+  width: 10.5%;
+  left: 55em;
+  top: 10em;
+}
+#velmi{
+  position:absolute;
+  width: 8%;
+  left: 64.1em;
+  top: 7.6em;
 }
 .map{
   position: absolute;
@@ -283,4 +434,5 @@ p {
   width: 100em;
   height: 50em;
   display: block;
+  filter: grayscale(100%);
 }
