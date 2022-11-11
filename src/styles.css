@@ -249,3 +249,38 @@ p {
 .container__table td {
   border: 1px solid black;
 }
+#abercockta{
+  position:absolute;
+  width: 8%;
+  left: 41.5em;
+  top: 15.8em;
+}
+#abercockta:hover{
+  filter: contrast(160%);
+}
+#korskaya{
+  position:absolute;
+  width: 13%;
+  left: 21.1em;
+  top: 8.3em;
+}
+#korskaya:hover{
+  filter: contrast(160%);
+}
+#seaofghosts{
+  position:absolute;
+  width: 13.5%;
+  left: 12.9em;
+  top: 7.7em;
+}
+#seaofghosts:hover{
+  filter: contrast(160%);
+}
+.map{
+  position: absolute;
+  background: url("../Lamoraun.png") no-repeat;
+  background-size: 100%;
+  width: 100em;
+  height: 50em;
+  display: block;
+}
