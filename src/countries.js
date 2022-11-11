@@ -143,5 +143,3 @@ const Countries = {
     urban: 20064,
   },
 };
-
-module.exports = { Countries };

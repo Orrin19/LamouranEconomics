@@ -1,7 +1,7 @@
 // Шаблон для хедера
 const header = document.createElement('header');
 header.classList.add('header');
-header.innerHTML = `<div class="header__logo">
+header.innerHTML = `<div class="header-left"><div class="header__logo">
 <a href="/">
   <img src="/src/logo.png" />
 </a>
@@ -52,7 +52,6 @@ header.innerHTML = `<div class="header__logo">
     <div class="dropdown__content">
       <a href="/countries/kehia.html">Кехия</a>
       <a href="/countries/kanakia.html">Канакия</a>
-      <a href="/countries/arraney.html">Арраней</a>
     </div>
   </div>
 </li>
@@ -79,5 +78,19 @@ header.innerHTML = `<div class="header__logo">
     </div>
   </div>
 </li>
-</ul>`;
+</ul></div><div class="header-right"></div>`;
 document.body.prepend(header);
+
+// Выкидывание дропдауна при наведении
+document.querySelectorAll('.dropdown').forEach((dropdown) => {
+  dropdown.addEventListener('mouseenter', (event) => {
+    event.target.lastElementChild.style.display = 'block';
+    event.target.firstElementChild.classList.add('dropdown--selected__button');
+  });
+  dropdown.addEventListener('mouseleave', (event) => {
+    event.target.lastElementChild.style.display = 'none';
+    event.target.firstElementChild.classList.remove(
+      'dropdown--selected__button'
+    );
+  });
+});
