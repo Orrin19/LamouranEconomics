@@ -157,7 +157,19 @@ p {
 .dropdown__content a:hover {
   background-color: var(--theme-block-background--hover);
 }
-
+.trade a{
+  background-color: inherit;
+  color: var(--theme-accent-font-color);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+}
+.trade a:hover{
+  color: yellow;
+}
 /**************/
 /*** CONTENT **/
 /**************/
