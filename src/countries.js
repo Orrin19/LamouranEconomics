@@ -186,12 +186,6 @@ const Countries = {
     rural: 130980,
     urban: 40780,
   },
-  kude: {
-    name: 'Кудэ',
-    color: '#e061b3',
-    rural: 12202,
-    urban: 13581,
-  },
   samat: {
     name: 'Самат',
     color: '#1ac8c1',
