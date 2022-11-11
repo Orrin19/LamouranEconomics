@@ -41,6 +41,7 @@ header.innerHTML = `<div class="header-left"><div class="header__logo">
     <div class="dropdown__content">
       <a href="/countries/lodogia.html">Лодогия</a>
       <a href="/countries/velmisia.html">Вельмиссия</a>
+      <a href="/countries/vochia.html">Вочия</a>
       <a href="/countries/belorabia.html">Белорабия</a>
       <a href="/countries/edildor.html">Эдильдор</a>
     </div>

@@ -3,10 +3,10 @@ const footer = document.createElement('footer');
 footer.classList.add('footer');
 footer.innerHTML = `<ul class="footer__nav">
 <li>
-    <a href="index.html">Домой</a>
+    <a href="/index.html">Домой</a>
 </li>
 <li>
-    <a href="https://lamoraun.fandom.com/ru/wiki">Вики</a>
+    <a href="https://lamoraun.fandom.com/ru/wiki/">Вики</a>
 </li>
 <li>
     <a href="https://discordserver.info/664491015914258452/invite">Дискорд</a>
