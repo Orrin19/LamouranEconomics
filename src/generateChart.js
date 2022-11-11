@@ -21,6 +21,13 @@ const chart = new CanvasJS.Chart('chartContainer', {
                 '_blank'
               );
             },
+            mousemove: function () {
+              document
+                .querySelectorAll(
+                  '.canvasjs-chart-container, .canvasjs-chart-container *'
+                )
+                .forEach((canvas) => (canvas.style.cursor = 'pointer'));
+            },
           };
           return dataPoint;
         })
