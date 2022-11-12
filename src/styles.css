@@ -157,7 +157,7 @@ p {
 .dropdown__content a:hover {
   background-color: var(--theme-block-background--hover);
 }
-.trade a{
+.trade a {
   background-color: inherit;
   color: var(--theme-accent-font-color);
   padding: 16px;
@@ -167,14 +167,54 @@ p {
   text-decoration: none;
   display: block;
 }
-.trade a:hover{
+.trade a:hover {
   color: yellow;
 }
 /**************/
 /*** CONTENT **/
 /**************/
-.cursor-pointer {
-  cursor: help !important;
+.container {
+  padding: 1em;
+  width: 100%;
+}
+
+.container h1 {
+  text-align: center;
+}
+
+.container__chart {
+  height: 370px;
+  margin: 0 auto;
+  max-width: 920px;
+}
+
+.container:not(.container--main) .container__chart {
+  padding-left: 40px;
+}
+
+.container__chart > div > *:not(canvas) {
+  display: none;
+}
+
+.container__table {
+  background-color: lightslategray;
+  border: 1px solid black;
+  border-spacing: 0;
+  margin: 1em auto;
+}
+
+.container__table td {
+  border: 1px solid black;
+}
+
+#profit {
+  color: gold;
+  font-size: large;
+}
+
+#controlFull {
+  color: orange;
+  font-size: large;
 }
 
 /**************/
@@ -218,408 +258,368 @@ p {
   width: 6px;
 }
 
-#profit {
-  color: gold;
-  font-size: large;
-}
-
-#controlFull {
-  color: orange;
-  font-size: large;
-}
-
-.container {
-  padding: 1em;
-  width: 100%;
-}
-
-.container h1 {
-  text-align: center;
-}
-
-.container__chart {
-  height: 370px;
-  margin: 0 auto;
-  max-width: 920px;
-}
-
-.container:not(.container--main) .container__chart {
-  padding-left: 40px;
-}
-
-.container__chart > div > *:not(canvas) {
-  display: none;
-}
-
-.container__table {
-  background-color: lightslategray;
-  border: 1px solid black;
-  border-spacing: 0;
-  margin: 1em auto;
-}
-
-.container__table td {
-  border: 1px solid black;
-}
-.map-container div:hover{
+/************/
+/****MAP*****/
+/************/
+.map-container div:hover {
   filter: contrast(150%);
 }
-.map-container div .title{
+.map-container div .title {
   opacity: 0;
 }
-.map-container div:hover .title{
+.map-container div:hover .title {
   opacity: 1;
 }
-#korskaya{
-  position:absolute;
+#korskaya {
+  position: absolute;
   width: 13.5%;
   left: 21.2em;
   top: 8.3em;
 }
-#kor div{
-  position:absolute;
+#kor div {
+  position: absolute;
   width: 13.5%;
   left: 24em;
   top: 8.5em;
 }
-#abercockta{
-  position:absolute;
+#abercockta {
+  position: absolute;
   width: 8.1%;
   left: 41.6em;
   top: 16em;
 }
-#abe div{
-  position:absolute;
+#abe div {
+  position: absolute;
   width: 8.1%;
   left: 43em;
   top: 19em;
   z-index: 10;
 }
-#seaofghosts{
-  position:absolute;
+#seaofghosts {
+  position: absolute;
   width: 13.9%;
   left: 13em;
   top: 7.75em;
 }
-#sea div{
-  position:absolute;
+#sea div {
+  position: absolute;
   width: 13.9%;
   left: 15em;
   top: 15em;
 }
-#clitor{
-  position:absolute;
+#clitor {
+  position: absolute;
   width: 8.5%;
   left: 24.55em;
   top: 13.15em;
 }
-#cli div{
-  position:absolute;
+#cli div {
+  position: absolute;
   width: 8.5%;
   left: 26em;
   top: 16em;
 }
-#huyerinis{
-  position:absolute;
+#huyerinis {
+  position: absolute;
   width: 9.8%;
   left: 22.2em;
   top: 19em;
 }
-#huy div{
-  position:absolute;
+#huy div {
+  position: absolute;
   width: 9.8%;
   left: 20em;
   top: 24em;
   z-index: 3;
 }
-#yamoto{
-  position:absolute;
+#yamoto {
+  position: absolute;
   width: 11.5%;
   left: 28.5em;
   top: 22.1em;
 }
-#yam div{
-  position:absolute;
+#yam div {
+  position: absolute;
   width: 11.5%;
   left: 30em;
   top: 28em;
 }
-#dzhudzhuh{
-  position:absolute;
+#dzhudzhuh {
+  position: absolute;
   width: 5%;
   left: 14.81em;
   top: 27.53em;
 }
-#dzhud div{
-  position:absolute;
+#dzhud div {
+  position: absolute;
   width: 5%;
   left: 14.81em;
   top: 27.53em;
 }
-#antakovia{
-  position:absolute;
+#antakovia {
+  position: absolute;
   width: 14.25%;
   left: 29.4em;
   top: 17.1em;
 }
-#ant div{
-  position:absolute;
+#ant div {
+  position: absolute;
   width: 14.25%;
   left: 33em;
   top: 20em;
   z-index: 3;
 }
-#bamvut{
-  position:absolute;
+#bamvut {
+  position: absolute;
   width: 12.65%;
   left: 47em;
   top: 10.8em;
 }
-#bam div{
-  position:absolute;
+#bam div {
+  position: absolute;
   width: 12%;
   left: 49em;
   top: 17em;
   z-index: 20;
 }
-#bavat{
-  position:absolute;
+#bavat {
+  position: absolute;
   width: 10.5%;
   left: 49.1em;
   top: 18.5em;
 }
-#bav div{
-  position:absolute;
+#bav div {
+  position: absolute;
   width: 10.5%;
   left: 53em;
   top: 19em;
   z-index: 10;
 }
-#buinomore{
-  position:absolute;
+#buinomore {
+  position: absolute;
   width: 11.5%;
   left: 63em;
   top: 13.8em;
 }
-#bui div{
-  position:absolute;
+#bui div {
+  position: absolute;
   width: 11.5%;
   left: 65em;
   top: 16em;
   z-index: 3;
 }
-#bushar{
-  position:absolute;
+#bushar {
+  position: absolute;
   width: 10.5%;
   left: 34.7em;
   top: 25em;
 }
-#bus div{
-  position:absolute;
+#bus div {
+  position: absolute;
   width: 10.5%;
   left: 37em;
   top: 29em;
   z-index: 3;
 }
-#cheeseantur{
-  position:absolute;
+#cheeseantur {
+  position: absolute;
   width: 5.5%;
   left: 45em;
   top: 11.3em;
 }
-#che div{
-  position:absolute;
+#che div {
+  position: absolute;
   width: 5.5%;
   left: 45em;
   top: 14em;
 }
-#dochehia{
-  position:absolute;
+#dochehia {
+  position: absolute;
   width: 9.2%;
   left: 46.4em;
   top: 20.6em;
 }
-#doc div{
-  position:absolute;
+#doc div {
+  position: absolute;
   width: 9.2%;
   left: 49em;
   top: 22em;
   z-index: 10;
 }
-#duchies{
-  position:absolute;
+#duchies {
+  position: absolute;
   width: 8.3%;
   left: 60.5em;
   top: 22.5em;
 }
-#duc div{
-  position:absolute;
+#duc div {
+  position: absolute;
   width: 8.3%;
   left: 62em;
   top: 28em;
   z-index: 10;
 }
-#eshebamvut{
-  position:absolute;
+#eshebamvut {
+  position: absolute;
   width: 12.5%;
   left: 50em;
   top: 3em;
 }
-#esh div{
-  position:absolute;
+#esh div {
+  position: absolute;
   width: 12.5%;
   left: 51em;
   top: 8em;
   z-index: 10;
 }
-#gennadiygosha{
-  position:absolute;
+#gennadiygosha {
+  position: absolute;
   width: 12.75%;
   left: 40.9em;
   top: 23.5em;
 }
-#gos div{
-  position:absolute;
+#gos div {
+  position: absolute;
   width: 12.75%;
   left: 44em;
   top: 28em;
 }
-#highlands{
-  position:absolute;
+#highlands {
+  position: absolute;
   width: 12.5%;
   left: 39.2em;
   top: 8em;
 }
-#high div{
-  position:absolute;
+#high div {
+  position: absolute;
   width: 12.5%;
   left: 41em;
   top: 11em;
 }
-#lodog{
-  position:absolute;
+#lodog {
+  position: absolute;
   width: 8%;
   left: 59em;
   top: 3.6em;
 }
-#lod div{
-  position:absolute;
+#lod div {
+  position: absolute;
   width: 8%;
   left: 62em;
   top: 5em;
 }
-#lowlands{
-  position:absolute;
+#lowlands {
+  position: absolute;
   width: 13.7%;
   left: 33em;
   top: 4em;
 }
-#low div{
-  position:absolute;
+#low div {
+  position: absolute;
   width: 13.7%;
   left: 35em;
   top: 6em;
 }
-#newsea{
-  position:absolute;
+#newsea {
+  position: absolute;
   width: 10%;
   left: 63.1em;
   top: 19.1em;
 }
-#new div{
-  position:absolute;
+#new div {
+  position: absolute;
   width: 10%;
   left: 65em;
   top: 23em;
 }
-#old{
-  position:absolute;
+#old {
+  position: absolute;
   width: 7%;
   left: 57.7em;
   top: 14.7em;
 }
-#oldd div{
-  position:absolute;
+#oldd div {
+  position: absolute;
   width: 7%;
   left: 57.7em;
   top: 17.5em;
 }
-#rabisands{
-  position:absolute;
+#rabisands {
+  position: absolute;
   width: 10%;
   left: 67.5em;
   top: 19em;
 }
-#rabi div{
-  position:absolute;
+#rabi div {
+  position: absolute;
   width: 10%;
-  left:70em;
+  left: 70em;
   top: 21em;
 }
-#zhungu{
-  position:absolute;
+#zhungu {
+  position: absolute;
   width: 14%;
   left: 29.8em;
   top: 10.5em;
 }
-#zhu div{
-  position:absolute;
+#zhu div {
+  position: absolute;
   width: 14%;
   left: 33em;
   top: 15em;
   z-index: 10;
 }
-#snofelt{
-  position:absolute;
+#snofelt {
+  position: absolute;
   width: 10.5%;
   left: 43.8em;
   top: 0.8em;
 }
-#sno div{
-  position:absolute;
+#sno div {
+  position: absolute;
   width: 10.5%;
   left: 47em;
   top: 5em;
 }
-#tark{
-  position:absolute;
+#tark {
+  position: absolute;
   width: 9%;
   left: 53em;
   top: 21em;
 }
-#tar div{
-  position:absolute;
+#tar div {
+  position: absolute;
   width: 9%;
   left: 57em;
   top: 25em;
 }
-#vaderd{
-  position:absolute;
+#vaderd {
+  position: absolute;
   width: 10.5%;
   left: 55em;
   top: 10em;
 }
-#vad div{
+#vad div {
   position: absolute;
   width: 10.5%;
   left: 59em;
   top: 12em;
 }
-#velmi{
-  position:absolute;
+#velmi {
+  position: absolute;
   width: 8%;
   left: 64.1em;
   top: 7.6em;
 }
-#vel div{
-  position:absolute;
+#vel div {
+  position: absolute;
   width: 8%;
   left: 65em;
   top: 10em;
 }
-.map{
+.map {
   position: absolute;
-  background: url("../Lamoraun.png") no-repeat;
+  background: url('../Lamoraun.png') no-repeat;
   background-size: 100%;
   width: 100em;
   height: 50em;
