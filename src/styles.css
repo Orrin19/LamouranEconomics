@@ -1,5 +1,6 @@
 :root {
   --theme-accent-background: #212529;
+  --theme-accent-background--hover: #2d3a46;
   --theme-accent-font-color: #fff;
   --theme-block-background: #f1f1f1;
   --theme-block-background--hover: #ddd;
@@ -86,6 +87,7 @@ p {
 .header__nav {
   display: flex;
   flex-direction: row;
+  gap: 5px;
   margin: 0;
 }
 
@@ -96,11 +98,12 @@ p {
 /* Dropdown Button */
 .dropdown__button {
   background-color: inherit;
-  color: var(--theme-accent-font-color);
-  padding: 16px;
-  font-size: 16px;
   border: none;
+  color: var(--theme-accent-font-color);
   cursor: pointer;
+  font-size: 16px;
+  padding: 14px;
+  transition: 0.2s;
 }
 
 .dropdown__button::after {
@@ -113,6 +116,11 @@ p {
   margin: 0 0 -3px 5px;
   height: 10px;
   width: 10px;
+}
+
+.dropdown__button:hover {
+  background-color: var(--theme-accent-background--hover);
+  border-radius: 5px;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -157,19 +165,11 @@ p {
 .dropdown__content a:hover {
   background-color: var(--theme-block-background--hover);
 }
-.trade a {
-  background-color: inherit;
-  color: var(--theme-accent-font-color);
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  text-decoration: none;
-  display: block;
+
+.dropdown__button--link::after {
+  display: none;
 }
-.trade a:hover {
-  color: yellow;
-}
+
 /**************/
 /*** CONTENT **/
 /**************/

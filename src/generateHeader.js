@@ -79,7 +79,11 @@ header.innerHTML = `<div class="header-left"><div class="header__logo">
   </div>
 </li>
 <li>
-<div class="trade"><a href="trade.html">Торговая карта</a></div>
+  <a href="/trade.html">
+    <button class="dropdown__button dropdown__button--link">
+      Торговая карта
+    </button>
+  </a>
 </li>
 </ul></div><div class="header-right"></div>`;
 document.body.prepend(header);

@@ -6,7 +6,7 @@ const country = document.body.dataset.country;
 
 const flag = document.createElement('div');
 flag.classList.add('header__flag');
-flag.innerHTML = `<img src="/flags/${country}.png" width="100px">`;
+flag.innerHTML = `<img src="/assets/flags/${country}.png" width="100px">`;
 
 const h1 = document.createElement('h1');
 h1.innerHTML = document.title;
