@@ -161,8 +161,48 @@ p {
 /**************/
 /*** CONTENT **/
 /**************/
-.cursor-pointer {
-  cursor: help !important;
+.container {
+  padding: 1em;
+  width: 100%;
+}
+
+.container h1 {
+  text-align: center;
+}
+
+.container__chart {
+  height: 370px;
+  margin: 0 auto;
+  max-width: 920px;
+}
+
+.container:not(.container--main) .container__chart {
+  padding-left: 40px;
+}
+
+.container__chart > div > *:not(canvas) {
+  display: none;
+}
+
+.container__table {
+  background-color: lightslategray;
+  border: 1px solid black;
+  border-spacing: 0;
+  margin: 1em auto;
+}
+
+.container__table td {
+  border: 1px solid black;
+}
+
+#profit {
+  color: gold;
+  font-size: large;
+}
+
+#controlFull {
+  color: orange;
+  font-size: large;
 }
 
 /**************/
@@ -204,48 +244,4 @@ p {
   display: inline-block;
   height: 6px;
   width: 6px;
-}
-
-#profit {
-  color: gold;
-  font-size: large;
-}
-
-#controlFull {
-  color: orange;
-  font-size: large;
-}
-
-.container {
-  padding: 1em;
-  width: 100%;
-}
-
-.container h1 {
-  text-align: center;
-}
-
-.container__chart {
-  height: 370px;
-  margin: 0 auto;
-  max-width: 920px;
-}
-
-.container:not(.container--main) .container__chart {
-  padding-left: 40px;
-}
-
-.container__chart > div > *:not(canvas) {
-  display: none;
-}
-
-.container__table {
-  background-color: lightslategray;
-  border: 1px solid black;
-  border-spacing: 0;
-  margin: 1em auto;
-}
-
-.container__table td {
-  border: 1px solid black;
 }
