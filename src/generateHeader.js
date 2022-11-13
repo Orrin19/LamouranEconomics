@@ -3,7 +3,7 @@ const header = document.createElement('header');
 header.classList.add('header');
 header.innerHTML = `<div class="header-left"><div class="header__logo">
 <a href="/">
-  <img src="/src/logo.png" />
+  <img src="/assets/logo.png" />
 </a>
 </div>
 <ul class="header__nav">

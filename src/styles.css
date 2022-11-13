@@ -46,7 +46,6 @@ p {
 /*****************/
 /*** SCROLLBAR ***/
 /*****************/
-
 /* For Webkit (Blink) */
 ::-webkit-scrollbar {
   width: 10px;
@@ -265,33 +264,39 @@ p {
 /************/
 /****MAP*****/
 /************/
-.map-container div:hover {
+.map-container__region:hover img {
   filter: contrast(150%);
 }
-.map-container div .title {
+
+.map-container__title {
   opacity: 0;
 }
-.map-container div:hover .title {
+
+.map-container__region:hover .map-container__title {
   opacity: 1;
 }
+
 #korskaya {
   position: absolute;
   width: 13.5%;
   left: 21.2em;
   top: 8.3em;
 }
+
 #kor div {
   position: absolute;
   width: 13.5%;
   left: 24em;
   top: 8.5em;
 }
+
 #abercockta {
   position: absolute;
   width: 8.1%;
   left: 41.6em;
   top: 16em;
 }
+
 #abe div {
   position: absolute;
   width: 8.1%;
@@ -299,36 +304,42 @@ p {
   top: 19em;
   z-index: 10;
 }
+
 #seaofghosts {
   position: absolute;
   width: 13.9%;
   left: 13em;
   top: 7.75em;
 }
+
 #sea div {
   position: absolute;
   width: 13.9%;
   left: 15em;
   top: 15em;
 }
+
 #clitor {
   position: absolute;
   width: 8.5%;
   left: 24.55em;
   top: 13.15em;
 }
+
 #cli div {
   position: absolute;
   width: 8.5%;
   left: 26em;
   top: 16em;
 }
+
 #huyerinis {
   position: absolute;
   width: 9.8%;
   left: 22.2em;
   top: 19em;
 }
+
 #huy div {
   position: absolute;
   width: 9.8%;
@@ -336,36 +347,42 @@ p {
   top: 24em;
   z-index: 3;
 }
+
 #yamoto {
   position: absolute;
   width: 11.5%;
   left: 28.5em;
   top: 22.1em;
 }
+
 #yam div {
   position: absolute;
   width: 11.5%;
   left: 30em;
   top: 28em;
 }
+
 #dzhudzhuh {
   position: absolute;
   width: 5%;
   left: 14.81em;
   top: 27.53em;
 }
+
 #dzhud div {
   position: absolute;
   width: 5%;
   left: 14.81em;
   top: 27.53em;
 }
+
 #antakovia {
   position: absolute;
   width: 14.25%;
   left: 29.4em;
   top: 17.1em;
 }
+
 #ant div {
   position: absolute;
   width: 14.25%;
@@ -373,12 +390,14 @@ p {
   top: 20em;
   z-index: 3;
 }
+
 #bamvut {
   position: absolute;
   width: 12.65%;
   left: 47em;
   top: 10.8em;
 }
+
 #bam div {
   position: absolute;
   width: 12%;
@@ -386,12 +405,14 @@ p {
   top: 17em;
   z-index: 20;
 }
+
 #bavat {
   position: absolute;
   width: 10.5%;
   left: 49.1em;
   top: 18.5em;
 }
+
 #bav div {
   position: absolute;
   width: 10.5%;
@@ -399,12 +420,14 @@ p {
   top: 19em;
   z-index: 10;
 }
+
 #buinomore {
   position: absolute;
   width: 11.5%;
   left: 63em;
   top: 13.8em;
 }
+
 #bui div {
   position: absolute;
   width: 11.5%;
@@ -412,12 +435,14 @@ p {
   top: 16em;
   z-index: 3;
 }
+
 #bushar {
   position: absolute;
   width: 10.5%;
   left: 34.7em;
   top: 25em;
 }
+
 #bus div {
   position: absolute;
   width: 10.5%;
@@ -425,24 +450,28 @@ p {
   top: 29em;
   z-index: 3;
 }
+
 #cheeseantur {
   position: absolute;
   width: 5.5%;
   left: 45em;
   top: 11.3em;
 }
+
 #che div {
   position: absolute;
   width: 5.5%;
   left: 45em;
   top: 14em;
 }
+
 #dochehia {
   position: absolute;
   width: 9.2%;
   left: 46.4em;
   top: 20.6em;
 }
+
 #doc div {
   position: absolute;
   width: 9.2%;
@@ -450,12 +479,14 @@ p {
   top: 22em;
   z-index: 10;
 }
+
 #duchies {
   position: absolute;
   width: 8.3%;
   left: 60.5em;
   top: 22.5em;
 }
+
 #duc div {
   position: absolute;
   width: 8.3%;
@@ -463,12 +494,14 @@ p {
   top: 28em;
   z-index: 10;
 }
+
 #eshebamvut {
   position: absolute;
   width: 12.5%;
   left: 50em;
   top: 3em;
 }
+
 #esh div {
   position: absolute;
   width: 12.5%;
@@ -476,96 +509,112 @@ p {
   top: 8em;
   z-index: 10;
 }
+
 #gennadiygosha {
   position: absolute;
   width: 12.75%;
   left: 40.9em;
   top: 23.5em;
 }
+
 #gos div {
   position: absolute;
   width: 12.75%;
   left: 44em;
   top: 28em;
 }
+
 #highlands {
   position: absolute;
   width: 12.5%;
   left: 39.2em;
   top: 8em;
 }
+
 #high div {
   position: absolute;
   width: 12.5%;
   left: 41em;
   top: 11em;
 }
+
 #lodog {
   position: absolute;
   width: 8%;
   left: 59em;
   top: 3.6em;
 }
+
 #lod div {
   position: absolute;
   width: 8%;
   left: 62em;
   top: 5em;
 }
+
 #lowlands {
   position: absolute;
   width: 13.7%;
   left: 33em;
   top: 4em;
 }
+
 #low div {
   position: absolute;
   width: 13.7%;
   left: 35em;
   top: 6em;
 }
+
 #newsea {
   position: absolute;
   width: 10%;
   left: 63.1em;
   top: 19.1em;
 }
+
 #new div {
   position: absolute;
   width: 10%;
   left: 65em;
   top: 23em;
 }
+
 #old {
   position: absolute;
   width: 7%;
   left: 57.7em;
   top: 14.7em;
 }
+
 #oldd div {
   position: absolute;
   width: 7%;
   left: 57.7em;
   top: 17.5em;
 }
+
 #rabisands {
   position: absolute;
   width: 10%;
   left: 67.5em;
   top: 19em;
 }
+
 #rabi div {
   position: absolute;
   width: 10%;
   left: 70em;
   top: 21em;
 }
+
 #zhungu {
   position: absolute;
   width: 14%;
   left: 29.8em;
   top: 10.5em;
 }
+
 #zhu div {
   position: absolute;
   width: 14%;
@@ -573,54 +622,63 @@ p {
   top: 15em;
   z-index: 10;
 }
+
 #snofelt {
   position: absolute;
   width: 10.5%;
   left: 43.8em;
   top: 0.8em;
 }
+
 #sno div {
   position: absolute;
   width: 10.5%;
   left: 47em;
   top: 5em;
 }
+
 #tark {
   position: absolute;
   width: 9%;
   left: 53em;
   top: 21em;
 }
+
 #tar div {
   position: absolute;
   width: 9%;
   left: 57em;
   top: 25em;
 }
+
 #vaderd {
   position: absolute;
   width: 10.5%;
   left: 55em;
   top: 10em;
 }
+
 #vad div {
   position: absolute;
   width: 10.5%;
   left: 59em;
   top: 12em;
 }
+
 #velmi {
   position: absolute;
   width: 8%;
   left: 64.1em;
   top: 7.6em;
 }
+
 #vel div {
   position: absolute;
   width: 8%;
   left: 65em;
   top: 10em;
 }
+
 .map {
   position: absolute;
   background: url('../Lamoraun.png') no-repeat;
