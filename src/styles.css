@@ -207,6 +207,10 @@ p {
   border: 1px solid black;
 }
 
+.container__table td:nth-child(2) {
+  width: 90px;
+}
+
 #profit {
   color: gold;
   font-size: large;
