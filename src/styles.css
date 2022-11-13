@@ -270,6 +270,7 @@ p {
 
 .map-container__title {
   opacity: 0;
+  user-select: none;
 }
 
 .map-container__region:hover .map-container__title {
