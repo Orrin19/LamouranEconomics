@@ -34,12 +34,17 @@ const regionName = document.querySelector('.map-container__region-name');
 regions.forEach((name, id) => {
   const region = document.getElementById(id);
 
-  region.addEventListener('mouseenter', function () {
+  region.addEventListener('mouseenter', () => {
     regionName.style.display = 'block';
     regionName.innerHTML = name;
   });
 
-  region.addEventListener('mouseleave', function () {
+  region.addEventListener('click', () => {
+    regionName.style.display = 'block';
+    regionName.innerHTML = name;
+  });
+
+  region.addEventListener('mouseleave', () => {
     regionName.style.display = 'none';
   });
 });
