@@ -269,6 +269,10 @@ p {
 /************/
 /****MAP*****/
 /************/
+.map-container {
+  background-color: #376b91;
+}
+
 .map-container__region-name {
   background-color: var(--theme-accent-background);
   border: 0.2em solid var(--theme-accent-background--hover);
